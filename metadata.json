@@ -1,0 +1,6 @@
+{
+  "name": "Dashbodi - Cosmetics Shop POS & Business System",
+  "description": "Point of Sale, inventory management, profit analytics, user control and PHP backend API for cosmetics retail store.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

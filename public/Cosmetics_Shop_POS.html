@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="sw">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <title>Cosmetics Shop POS - Kizinduzi cha App</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 24px;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background-color: #0f172a;
+      color: #f8fafc;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      box-sizing: border-box;
+    }
+    .card {
+      background: #1e293b;
+      padding: 32px 24px;
+      border-radius: 20px;
+      border: 1px solid #334155;
+      max-width: 440px;
+      width: 100%;
+      text-align: center;
+      box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.6);
+    }
+    .icon {
+      font-size: 54px;
+      margin-bottom: 12px;
+      display: inline-block;
+    }
+    h1 {
+      font-size: 22px;
+      font-weight: 800;
+      margin: 0 0 8px 0;
+      color: #ffffff;
+    }
+    p {
+      font-size: 13px;
+      color: #94a3b8;
+      line-height: 1.6;
+      margin: 0 0 24px 0;
+    }
+    .btn {
+      display: block;
+      width: 100%;
+      padding: 14px 20px;
+      background: #e11d48;
+      color: #ffffff;
+      text-decoration: none;
+      border-radius: 12px;
+      font-weight: 700;
+      font-size: 15px;
+      box-sizing: border-box;
+      transition: all 0.2s ease;
+      box-shadow: 0 4px 12px rgba(225, 29, 72, 0.3);
+    }
+    .btn:hover {
+      background: #be123c;
+      transform: translateY(-1px);
+    }
+    .features {
+      margin-top: 24px;
+      padding-top: 20px;
+      border-top: 1px solid #334155;
+      display: flex;
+      justify-content: space-around;
+      font-size: 12px;
+      color: #cbd5e1;
+    }
+    .feature-item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 4px;
+    }
+  </style>
+  <script>
+    // Redirect to active POS app immediately
+    window.onload = function() {
+      const targetUrl = window.location.origin;
+      // If hosted, redirect to home
+      if (window.location.protocol.startsWith('http')) {
+        setTimeout(function() {
+          window.location.href = targetUrl;
+        }, 500);
+      }
+    };
+  </script>
+</head>
+<body>
+  <div class="card">
+    <div class="icon">💄</div>
+    <h1>Cosmetics Shop POS</h1>
+    <p>Kizinduzi cha mfumo wa duka la vipodozi, mauzo ya haraka, stoo na ripoti za faida.</p>
+    
+    <a class="btn" href="/">Fungua Mfumo Sasa (Launch POS)</a>
+
+    <div class="features">
+      <div class="feature-item">
+        <span>⚡</span>
+        <span>Haraka Sana</span>
+      </div>
+      <div class="feature-item">
+        <span>📶</span>
+        <span>Hata Bila Mtandao</span>
+      </div>
+      <div class="feature-item">
+        <span>🔒</span>
+        <span>Ulinzi Imara</span>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
